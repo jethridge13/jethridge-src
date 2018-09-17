@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CustomHeaderComponent } from './custom-header/custom-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomHeaderComponent
   ],
   imports: [
     BrowserModule
