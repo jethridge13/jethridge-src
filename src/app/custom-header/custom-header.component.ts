@@ -12,4 +12,9 @@ export class CustomHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  showHeaderLinks(): void {
+  	// TODO
+  	console.log(`Button clicked!`);
+  }
+
 }
