@@ -1,0 +1,6 @@
+<!-- TODO Concerned that this might have one img per each source -->
+<picture>
+	<source *ngFor="let source of sources"
+	srcset="{{source.srcset}}" type="{{source.type}}">
+	<img src="{{img}}" alt="{{alt}}">
+</picture>
