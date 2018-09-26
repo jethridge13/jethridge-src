@@ -2,3 +2,15 @@
 body {
 	margin: 0;
 }
+
+h1, h2, h3 {
+	color: #1e3333;
+}
+
+/* Focus styles */
+button:focus, a:focus {
+	outline: none;
+	border: 10px solid blue;
+	box-shadow: 0 0 10px blue;
+	transition: ease-in-out 0.2s;
+}

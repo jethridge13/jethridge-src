@@ -4,14 +4,6 @@
 ============================================
 */
 
-/* Focus styles */
-button:focus, a:focus {
-	outline: none;
-	border: 10px solid blue;
-	box-shadow: 0 0 10px blue;
-	transition: ease-in-out 0.2s;
-}
-
 button {
 	min-height: 32px;
 	min-width: 32px;
@@ -40,7 +32,6 @@ header {
 #logo {
 	float: left;
 	margin: 13px 0px 14px 8px;
-	color: #1e3333;
 	font-size: 32px;
 	font-family: 'Ubuntu', Geneva, sans-serif;
 }

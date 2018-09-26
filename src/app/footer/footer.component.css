@@ -4,12 +4,25 @@
 ============================================
 */
 
+a {
+	background: none;
+	border: none;
+	color: #1e3333;
+	font-size: 24px;
+	padding: 8px;
+}
+
 footer {
-	height: 64px;
+	height: 72px;
 	background-color: silver;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
 }
 
 /* 
@@ -17,3 +30,7 @@ footer {
 				ID styles
 ============================================
 */
+
+#links {
+	margin: 8px 0 8px 0;
+}
