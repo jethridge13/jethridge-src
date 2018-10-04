@@ -4,16 +4,8 @@
 			alt="Hi, I'm Josh. I make stuff.">
 </app-picture>
 
-<section>
-	<h1>About Me</h1>
-</section>
-
-<section>
-	<h1>Projects</h1>
-</section>
-
-<section>
-	<h1>Contact Me</h1>
+<section *ngFor="let section of sections">
+	<h1>{{section.title}}</h1>
 </section>
 
 <app-footer></app-footer>

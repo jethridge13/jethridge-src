@@ -7,8 +7,10 @@
     "declaration": false,
     "module": "es2015",
     "moduleResolution": "node",
+    "noImplicitAny": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictNullChecks": true,
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
