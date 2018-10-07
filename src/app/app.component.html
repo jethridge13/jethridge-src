@@ -1,10 +1,12 @@
 <app-custom-header></app-custom-header>
+<app-hamburger-nav></app-hamburger-nav>
 <app-picture [sources]="[{'srcset': './img/me.webp', 'type': 'image/webp'}]"
 			img="./img/me.jpg"
 			alt="Hi, I'm Josh. I make stuff.">
 </app-picture>
 
 <section *ngFor="let section of sections">
+	<a name="{{section.link}}"></a>
 	<h1>{{section.title}}</h1>
 </section>
 

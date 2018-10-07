@@ -4,23 +4,23 @@ import { Section } from './section';
 import { SectionServiceService } from './section-service.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jethridge';
-  sections: Section[];
+	title = 'jethridge';
+	sections: Section[];
 
-  constructor(private sectionService: SectionServiceService) { }
+	constructor(private sectionService: SectionServiceService) { }
 
-  ngOnInit() {
-  	this.getSections();
-  }
+	ngOnInit() {
+		this.getSections();
+	}
 
-  getSections(): void {
-  	this.sectionService.getSections().subscribe(sections => {
-  		this.sections = sections;
-  	});
-  }
+	getSections(): void {
+		this.sectionService.getSections().subscribe(sections => {
+			this.sections = sections;
+		});
+	}
 }

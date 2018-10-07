@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
 	margin: 0;
+	font-family: 'Ubuntu', Geneva, sans-serif;
 }
 
 h1, h2, h3 {
@@ -8,7 +9,7 @@ h1, h2, h3 {
 }
 
 /* Focus styles */
-button:focus, a:focus {
+*:focus {
 	outline: none;
 	border: 10px solid blue;
 	box-shadow: 0 0 10px blue;

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,19 +8,22 @@ import { AppComponent } from './app.component';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
 import { PictureComponent } from './picture/picture.component';
 import { FooterComponent } from './footer/footer.component';
+import { HamburgerNavComponent } from './hamburger-nav/hamburger-nav.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CustomHeaderComponent,
-    PictureComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		CustomHeaderComponent,
+		PictureComponent,
+		FooterComponent,
+		HamburgerNavComponent
+	],
+	imports: [
+		BrowserModule,
+		CommonModule,
+		FontAwesomeModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
 export class Section {
-	title: string
+	title: string;
+	link?: string;
 }

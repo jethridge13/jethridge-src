@@ -2,12 +2,15 @@ import { Section } from './section';
 
 export const SECTIONS: Section[] = [
 	{
-		title: 'About Me'
+		title: 'About Me',
+		link: '#AboutMe'
 	},
 	{
-		title: 'Projects'
+		title: 'Projects',
+		link: '#Projects'
 	},
 	{
-		title: 'Contact Me'
+		title: 'Contact Me',
+		link: '#ContactMe'
 	}
 ];

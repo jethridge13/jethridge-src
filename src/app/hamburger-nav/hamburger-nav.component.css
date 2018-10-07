@@ -1,0 +1,36 @@
+a, button{
+	border: none;
+	color: #1e3333;
+	text-decoration: none;
+}
+
+a {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+button {
+	background: none;
+	border-radius: 8px;
+	border: 2px solid #1e3333;
+	color: #1e3333;
+	font-size: 1.5rem;
+	margin: 0 16px 0 16px;
+}
+
+div {
+	width: 100%;
+	font-size: 1.5rem;
+	border-top: 1px solid silver;
+	background-color: darkgrey;
+}
+
+a:focus{
+	text-decoration: underline;
+}
+
+#hamburger-nav-close {
+	background-color: silver;
+	text-align: right;
+}

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import { SECTIONS } from './dev-sections';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class SectionServiceService {
 

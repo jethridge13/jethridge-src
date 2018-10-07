@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HamburgerNavMenuService } from '../hamburger-nav-menu.service';
+
 @Component({
-  selector: 'app-custom-header',
-  templateUrl: './custom-header.component.html',
-  styleUrls: ['./custom-header.component.css']
+	selector: 'app-custom-header',
+	templateUrl: './custom-header.component.html',
+	styleUrls: ['./custom-header.component.css']
 })
 export class CustomHeaderComponent implements OnInit {
 
-  constructor() { }
+	constructor(private menuService: HamburgerNavMenuService) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
-  showHeaderLinks(): void {
-  	// TODO
-  	console.log(`Button clicked!`);
-  }
+	showHeaderLinks(): void {
+	this.menuService.onMainEvent.emit();
+	}
 
 }
