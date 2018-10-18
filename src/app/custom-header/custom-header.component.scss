@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 /* 
 ============================================
 				Element styles
@@ -23,9 +25,9 @@ header {
 	float: right;
 	margin: 16px;
 	font-size: 16px;
-	color: #1e3333;
+	color: $primary-font-color;
 	background: gainsboro;
-	border: 2px solid #1e3333;
+	border: 2px solid $primary-font-color;
 	border-radius: 8px;
 }
 

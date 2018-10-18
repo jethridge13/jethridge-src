@@ -5,7 +5,7 @@ import { HamburgerNavMenuService } from '../hamburger-nav-menu.service';
 @Component({
 	selector: 'app-custom-header',
 	templateUrl: './custom-header.component.html',
-	styleUrls: ['./custom-header.component.css']
+	styleUrls: ['./custom-header.component.scss']
 })
 export class CustomHeaderComponent implements OnInit {
 
