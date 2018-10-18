@@ -1,6 +1,8 @@
+@import '../../sass/variables';
+
 a, button{
 	border: none;
-	color: #1e3333;
+	color: $primary-font-color;
 	text-decoration: none;
 }
 
