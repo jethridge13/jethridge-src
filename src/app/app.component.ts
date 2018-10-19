@@ -17,7 +17,6 @@ export class AppComponent {
 	constructor(private sectionService: SectionServiceService) { }
 
 	ngOnInit() {
-		this.getSections();
 		this.getProjects();
 	}
 

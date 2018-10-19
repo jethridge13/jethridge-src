@@ -9,6 +9,7 @@ import { CustomHeaderComponent } from './custom-header/custom-header.component';
 import { PictureComponent } from './picture/picture.component';
 import { FooterComponent } from './footer/footer.component';
 import { HamburgerNavComponent } from './hamburger-nav/hamburger-nav.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
 	declarations: [
@@ -16,7 +17,8 @@ import { HamburgerNavComponent } from './hamburger-nav/hamburger-nav.component';
 		CustomHeaderComponent,
 		PictureComponent,
 		FooterComponent,
-		HamburgerNavComponent
+		HamburgerNavComponent,
+		ProjectCardComponent
 	],
 	imports: [
 		BrowserModule,
