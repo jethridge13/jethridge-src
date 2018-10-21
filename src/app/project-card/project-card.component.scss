@@ -1,0 +1,18 @@
+@import '../../sass/variables';
+
+section {
+	border: 2px solid $primary-font-color;
+	border-radius: 8px;
+	margin: 8px;
+	padding: 8px;
+}
+
+h3 {
+	margin-top: 4px;
+	text-align: center;
+}
+
+.links {
+	text-align: center;
+	font-size: 20px;
+}

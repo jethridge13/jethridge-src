@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Project } from '../project';
 import { SectionServiceService } from '../section-service.service';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
 	selector: 'app-project-card',
@@ -10,18 +11,13 @@ import { SectionServiceService } from '../section-service.service';
 })
 export class ProjectCardComponent implements OnInit {
 
-	projects: Project[];
+	@Input() project: Project;
+	faGithub = faGithub;
 
 	constructor(private sectionService: SectionServiceService) { }
 
 	ngOnInit() {
-		this.getProjects();
-	}
 
-	getProjects(): void {
-		this.sectionService.getProjects().subscribe(projects => {
-			this.projects = projects;
-		});
 	}
 
 }
