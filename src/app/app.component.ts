@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { Section } from './section';
 import { Project } from './project';
+import { ContactCard } from './contact-card';
 import { SectionServiceService } from './section-service.service';
 
 @Component({
@@ -13,11 +14,13 @@ export class AppComponent {
 	title = 'jethridge';
 	sections: Section[];
 	projects: Project[];
+	contactCards: ContactCard[];
 
 	constructor(private sectionService: SectionServiceService) { }
 
 	ngOnInit() {
 		this.getProjects();
+		this.getContactCards();
 	}
 
 	getSections(): void {
@@ -30,5 +33,11 @@ export class AppComponent {
 		this.sectionService.getProjects().subscribe(projects => {
 			this.projects = projects;
 		});
+	}
+
+	getContactCards(): void {
+		this.sectionService.getContactCards().subscribe(contactCards => {
+			this.contactCards = contactCards;
+		})
 	}
 }

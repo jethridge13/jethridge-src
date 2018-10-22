@@ -10,6 +10,7 @@ import { PictureComponent } from './picture/picture.component';
 import { FooterComponent } from './footer/footer.component';
 import { HamburgerNavComponent } from './hamburger-nav/hamburger-nav.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { ContactCardComponent } from './contact-card/contact-card.component';
 
 @NgModule({
 	declarations: [
@@ -18,7 +19,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 		PictureComponent,
 		FooterComponent,
 		HamburgerNavComponent,
-		ProjectCardComponent
+		ProjectCardComponent,
+		ContactCardComponent
 	],
 	imports: [
 		BrowserModule,
