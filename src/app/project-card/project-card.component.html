@@ -3,8 +3,11 @@
 	<img *ngIf=project.img src={{project.img}} alt={{project.alt}}>
 	<p *ngIf=project.description>{{project.description}}</p>
 	<div class="links">
-		<a *ngIf=project.link href={{project.link}} target="_blank">Visit</a>
-		<a *ngIf=project.github href={{project.github}} target="_blank">
+		<a *ngIf=project.link href={{project.link}}
+		target="_blank"
+		class="project-link">Visit</a>
+		<a *ngIf=project.github href={{project.github}}
+		target="_blank">
 			<fa-icon [icon]="faGithub"></fa-icon>
 		</a>
 	</div>

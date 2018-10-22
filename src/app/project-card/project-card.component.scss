@@ -1,10 +1,9 @@
 @import '../../sass/variables';
 
-section {
-	border: 2px solid $primary-font-color;
-	border-radius: 8px;
-	margin: 8px;
-	padding: 8px;
+a {
+	border: none;	
+	margin: 0 8px 0 8px;
+	padding: 2px 4px;
 }
 
 h3 {
@@ -12,7 +11,25 @@ h3 {
 	text-align: center;
 }
 
+img {
+	width: 100%;
+}
+
+section {
+	border: 2px solid $primary-font-color;
+	border-radius: 8px;
+	margin: 8px;
+	padding: 8px;
+}
+
+
 .links {
 	text-align: center;
 	font-size: 20px;
+}
+
+.project-link {
+	background-color: $secondary-font-color;
+	color: $secondary-background-color;
+	text-decoration: none;
 }

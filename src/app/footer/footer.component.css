@@ -14,7 +14,6 @@ a {
 footer {
 	height: 72px;
 	background-color: silver;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
@@ -31,5 +30,5 @@ h3 {
 */
 
 #links {
-	margin: 8px 0 8px 0;
+	padding: 8px 0 8px 0;
 }
