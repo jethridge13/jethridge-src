@@ -16,5 +16,6 @@ export const CONTACTCARDS: ContactCard[] = [
 	{
 		title: 'Github',
 		link: 'https://github.com/jethridge13',
+		linkTitle: 'Check out my projects'
 	}
 ];
