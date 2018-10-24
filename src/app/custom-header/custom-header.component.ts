@@ -15,7 +15,7 @@ export class CustomHeaderComponent implements OnInit {
 	}
 
 	showHeaderLinks(): void {
-	this.menuService.onMainEvent.emit();
+		this.menuService.onMainEvent.emit();
 	}
 
 }

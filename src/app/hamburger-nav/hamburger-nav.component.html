@@ -1,4 +1,4 @@
-<div *ngIf="visible">
+<div [hidden]="!visible" [@openClose]='state' id="dropdown-container">
 	<div *ngFor="let section of sections">
 		<a href={{section.link}}>
 			<span>{{section.title}}</span>

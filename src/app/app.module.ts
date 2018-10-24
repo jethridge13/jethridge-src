@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -24,6 +25,7 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		CommonModule,
 		FontAwesomeModule
 	],
