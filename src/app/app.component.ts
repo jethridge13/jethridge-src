@@ -8,13 +8,20 @@ import { SectionServiceService } from './section-service.service';
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.css']
+	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 	title = 'jethridge';
 	sections: Section[];
 	projects: Project[];
 	contactCards: ContactCard[];
+
+	stonyBrookCard:Project = {title: 'Stony Brook University',
+		img:'./assets/img/SB.jpg'};
+	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
+		img:'./assets/img/GWG.jpg'};
+	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
+		img:'./assets/img/mws-nanodegree.svg'};
 
 	constructor(private sectionService: SectionServiceService) { }
 

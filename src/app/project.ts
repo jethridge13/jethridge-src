@@ -1,6 +1,6 @@
 // TODO Update to use picture instead
 
-export class Project {
+export interface Project {
 	title: string;
 	description?: string;
 	img?: string;
