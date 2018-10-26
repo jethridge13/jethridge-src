@@ -5,9 +5,11 @@
 	<div class="links">
 		<a *ngIf=project.link href={{project.link}}
 		target="_blank"
-		class="project-link">Visit</a>
+		class="project-link"
+		rel="noopener">Visit</a>
 		<a *ngIf=project.github href={{project.github}}
-		target="_blank">
+		target="_blank"
+		rel="noopener">
 			<fa-icon [icon]="faGithub"></fa-icon>
 		</a>
 	</div>
