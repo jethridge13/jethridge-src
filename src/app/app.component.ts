@@ -17,11 +17,21 @@ export class AppComponent {
 	contactCards: ContactCard[];
 
 	stonyBrookCard:Project = {title: 'Stony Brook University',
-		img:'./assets/img/SB.jpg'};
+		img:'./assets/img/SB.jpg',
+		subtitles:['Bachelors of Science in Computer Science']
+	};
 	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
-		img:'./assets/img/GWG.jpg'};
+		img:'./assets/img/GWG.jpg',
+		subtitles:['Accepted Phase One: January 10, 2018',
+			'Accepted Phase Two: April 17, 2018']
+	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
-		img:'./assets/img/mws-nanodegree.svg'};
+		img:'./assets/img/mws-nanodegree.svg',
+		subtitles:['Awarded September 2, 2018']
+	};
+	KMCard:Project = {title: 'Konica Minolta Business Solutions',
+		img:'./assets/img/KM.png',
+		subtitles:['Software Engineer', 'April 2017 - Present']}
 
 	constructor(private sectionService: SectionServiceService) { }
 

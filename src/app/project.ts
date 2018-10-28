@@ -2,6 +2,7 @@
 
 export interface Project {
 	title: string;
+	subtitles?: string[];
 	description?: string;
 	img?: string;
 	alt?: string;

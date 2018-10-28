@@ -1,6 +1,7 @@
 <section>
 	<h3>{{project.title}}</h3>
 	<img *ngIf=project.img src={{project.img}} alt={{project.alt}}>
+	<h2 *ngFor="let sub of project.subtitles">{{sub}}</h2>
 	<p *ngIf=project.description>{{project.description}}</p>
 	<div class="links">
 		<a *ngIf=project.link href={{project.link}}
