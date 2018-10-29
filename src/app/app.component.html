@@ -5,7 +5,7 @@
 			alt="Hi, I'm Josh. I make stuff.">
 </app-picture>
 
-<section>
+<section id="about-me-section">
 	<a name="#AboutMe"></a>
 	<h1>About Me</h1>
 	<h2>Education and Awards</h2>
@@ -15,10 +15,10 @@
 	<h2>Work Experience</h2>
 	<app-project-card [project]=KMCard></app-project-card>
 </section>
-<section class="cards">
+<section id="cards">
 	<a name="#Projects"></a>
 	<h1>Projects</h1>
-	<div *ngFor="let project of projects">
+	<div *ngFor="let project of projects" class="project-card">
 		<app-project-card [project]=project></app-project-card>
 	</div>
 </section>

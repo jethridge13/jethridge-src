@@ -7,7 +7,7 @@ a {
 }
 
 h2 {
-	margin: 1px;
+	margin: 2px;
 	font-size: 1.0rem;
 	text-align: center;
 }
@@ -24,7 +24,7 @@ img {
 section {
 	border: 2px solid $primary-font-color;
 	border-radius: 8px;
-	margin: 8px;
+	margin: 8px auto 8px auto;
 	padding: 8px;
 	max-width: 400px;
 }

@@ -5,11 +5,17 @@
 */
 h1, h2 {
 	padding: 4px;
-	width: 100%;
+	width: calc(100% - 8px);
+	text-align: center;
 }
 
 h2 {
 	font-size: 1.2rem;
+}
+
+section {
+	max-width: 848px;
+	margin: auto;
 }
 
 /* 
@@ -17,7 +23,16 @@ h2 {
 				Class styles
 ============================================
 */
-.cards {
+.project-card {
+	margin: 0 2px 0 2px;
+}
+
+/* 
+============================================
+				ID styles
+============================================
+*/
+#cards {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
