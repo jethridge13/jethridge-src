@@ -23,8 +23,12 @@ section {
 				Class styles
 ============================================
 */
+.contact-card {
+	flex-grow: 1;
+}
+
 .project-card {
-	margin: 0 2px 0 2px;
+	margin: auto;
 }
 
 /* 
@@ -32,8 +36,30 @@ section {
 				ID styles
 ============================================
 */
-#cards {
+#project-section {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
+/* 
+============================================
+				Media Queries
+============================================
+*/
+@media screen and (min-width: 848px) {
+	.contact-card {
+		width: 30%;
+	}
+
+	.project-card {
+		margin: 0 2px 0 2px;
+	}
+
+	#contact-section {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+

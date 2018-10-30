@@ -15,17 +15,17 @@
 	<h2>Work Experience</h2>
 	<app-project-card [project]=KMCard></app-project-card>
 </section>
-<section id="cards">
+<section id="project-section">
 	<a name="#Projects"></a>
 	<h1>Projects</h1>
 	<div *ngFor="let project of projects" class="project-card">
 		<app-project-card [project]=project></app-project-card>
 	</div>
 </section>
-<section>
+<section id="contact-section">
 	<a name="#ContactMe"></a>
 	<h1>Contact Me</h1>
-	<div *ngFor="let card of contactCards">
+	<div *ngFor="let card of contactCards" class="contact-card">
 		<app-contact-card [card]=card></app-contact-card>
 	</div>
 </section>
