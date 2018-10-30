@@ -3,14 +3,14 @@ import { Section } from './section';
 export const SECTIONS: Section[] = [
 	{
 		title: 'About Me',
-		link: '#AboutMe'
+		link: '#about-me-section'
 	},
 	{
 		title: 'Projects',
-		link: '#Projects'
+		link: '#project-section'
 	},
 	{
 		title: 'Contact Me',
-		link: '#ContactMe'
+		link: '#contact-section'
 	}
 ];

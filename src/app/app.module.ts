@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -27,7 +28,8 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
 		BrowserModule,
 		BrowserAnimationsModule,
 		CommonModule,
-		FontAwesomeModule
+		FontAwesomeModule,
+		RouterModule.forRoot([])
 	],
 	providers: [],
 	bootstrap: [AppComponent]
