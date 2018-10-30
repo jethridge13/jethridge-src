@@ -15,10 +15,10 @@ import { HamburgerNavMenuService } from '../hamburger-nav-menu.service';
 				opacity: '1'
 			})),
 			state('closed', style({
-				opacity: '0.5'
+				opacity: '0'
 			})),
 			transition('open => closed', [
-				animate('0s')
+				animate('0.2s')
 			]),
 			transition('closed => open', [
 				animate('0.2s')
@@ -29,13 +29,12 @@ import { HamburgerNavMenuService } from '../hamburger-nav-menu.service';
 export class HamburgerNavComponent implements OnInit {
 
 	sections: Section[];
-	visible = false;
+	visible = true;
 	state = 'closed';
 
 	constructor(private sectionService: SectionServiceService,
 		private menuService: HamburgerNavMenuService) {
 		menuService.onMainEvent.subscribe(() => {
-			this.visible = !this.visible;
 			if (this.state === 'closed') {
 				this.state = 'open';
 			} else {
@@ -52,6 +51,17 @@ export class HamburgerNavComponent implements OnInit {
 		this.sectionService.getSections().subscribe(sections => {
 			this.sections = sections;
 		});
+	}
+
+	// TODO Update this to hide the visibility of the dropdown
+	// Functionality it works but creates accessibility issues and
+	// tab order issues
+	animationStart($event: AnimationPlaybackEvent) {
+		//this.visible = true;
+	}
+
+	animationDone($event: AnimationPlaybackEvent) {
+		//this.visible = false;
 	}
 
 }

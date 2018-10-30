@@ -33,7 +33,8 @@ a:focus{
 }
 
 #dropdown-container {
-	position: absolute;
+	position: fixed;
+	translate: 0 64px;
 }
 
 #hamburger-nav-close {
