@@ -1,6 +1,6 @@
 <div [hidden]="!visible" [@openClose]='state'
-(@openClose.start)='animationStart(event)'
-(@openClose.done)='animationDone(event)'
+(@openClose.start)='animationStart($event)'
+(@openClose.done)='animationDone($event)'
 id="dropdown-container">
 	<div *ngFor="let section of sections">
 		<a href={{section.link}}>
