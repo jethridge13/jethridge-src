@@ -1,9 +1,16 @@
 @import './variables';
 
-a {
+a, button {
 	border: none;	
 	margin: 0 8px 0 8px;
 	padding: 2px 4px;
+}
+
+button {
+	border: none;
+	font-family: $primary-font-family;
+	font-size: 18px;
+	margin: 4px 0 4px 0;
 }
 
 h2 {
@@ -21,6 +28,10 @@ img {
 	width: 100%;
 }
 
+p {
+	margin: 0 20px 0 20px;
+}
+
 section {
 	border: 2px solid $primary-font-color;
 	border-radius: 8px;
@@ -35,7 +46,7 @@ section {
 	font-size: 20px;
 }
 
-.project-link, .contact-link {
+button, .project-link, .contact-link {
 	background-color: $secondary-font-color;
 	color: $secondary-background-color;
 	text-decoration: none;
