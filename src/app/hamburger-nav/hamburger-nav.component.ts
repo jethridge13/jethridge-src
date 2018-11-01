@@ -12,16 +12,16 @@ import { HamburgerNavMenuService } from '../hamburger-nav-menu.service';
 	animations: [
 		trigger('openClose', [
 			state('open', style({
-				opacity: '1'
+				transform: 'translateY(0%)'
 			})),
 			state('closed', style({
-				opacity: '0'
+				transform: 'translateY(-100%)'
 			})),
 			transition('open => closed', [
-				animate('0.2s')
+				animate('0.2s ease-in')
 			]),
 			transition('closed => open', [
-				animate('0.2s')
+				animate('0.2s ease-in')
 			])
 		])
 	]
