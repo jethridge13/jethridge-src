@@ -44,7 +44,6 @@ export class ProjectCardComponent implements OnInit {
 	}
 
 	animationStart(event: any): void {
-		console.log(this.detailsState);
 		if (event.toState === 'open') {
 			this.detailsVisible = true;
 			this.viewMoreText = 'Hide Details';

@@ -21,5 +21,6 @@
 <p [hidden]="!detailsVisible" *ngIf=project.details 
 [@slideInOut]="detailsState"
 (@slideInOut.start)="animationStart($event)"
-(@slideInOut.done)="animationDone($event)">
+(@slideInOut.done)="animationDone($event)"
+class="details">
 {{project.details}}</p>

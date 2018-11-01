@@ -28,11 +28,6 @@ img {
 	width: 100%;
 }
 
-p {
-	margin: 0 20px 0 20px;
-	position: relative;
-	z-index: -100;
-}
 
 section {
 	background-color: $secondary-background-color;
@@ -43,6 +38,11 @@ section {
 	max-width: 400px;
 }
 
+.details {
+	margin: 0 20px 0 20px;
+	position: relative;
+	z-index: -100;
+}
 
 .links {
 	text-align: center;
