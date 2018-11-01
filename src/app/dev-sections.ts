@@ -10,6 +10,10 @@ export const SECTIONS: Section[] = [
 		link: '#project-section'
 	},
 	{
+		title: 'Technologies',
+		link: '#technology-section'
+	},
+	{
 		title: 'Contact Me',
 		link: '#contact-section'
 	}
