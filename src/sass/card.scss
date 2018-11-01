@@ -30,9 +30,12 @@ img {
 
 p {
 	margin: 0 20px 0 20px;
+	position: relative;
+	z-index: -100;
 }
 
 section {
+	background-color: $secondary-background-color;
 	border: 2px solid $primary-font-color;
 	border-radius: 8px;
 	margin: 8px auto 8px auto;
