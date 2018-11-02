@@ -28,7 +28,8 @@ export class AppComponent {
 		description: 'I was selected and inducted into the Udacity Grow With \
 		Google challenge based on my application in January, 2018. After my \
 		performance and community participation in phase one, I was chosen to \
-		move to stage two in April, 2018.'
+		move to stage two in April, 2018.',
+		details: ''
 	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
 		img:'./assets/img/mws-nanodegree.svg',
