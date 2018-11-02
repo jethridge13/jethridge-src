@@ -18,7 +18,11 @@ export class AppComponent {
 
 	stonyBrookCard:Project = {title: 'Stony Brook University',
 		img:'./assets/img/SB.jpg',
-		subtitles:['Bachelors of Science in Computer Science'],
+		subtitles:['Bachelors of Science in Computer Science',
+		'Class of 2016'],
+		description: 'What\'s a Seawolf? I\'m a Seawolf! My time at Stony Brook \
+		was some of the best 4 years of my life. During my time there, I gained \
+		the knowledge and skills to be a robust and dedicated programmer.',
 		details: ''
 	};
 	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
@@ -33,11 +37,21 @@ export class AppComponent {
 	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
 		img:'./assets/img/mws-nanodegree.svg',
-		subtitles:['Awarded September 2, 2018']
+		subtitles:['Awarded September 2, 2018'],
+		description: 'As part of the Grow with Google Udacity Challenge, I \
+		was given the opportunity to complete Udacity\'s Mobile Web Specialist \
+		nanodegree. The nanodegree included three projects and covered several \
+		topics related to building responsive progressive web apps.'
 	};
 	KMCard:Project = {title: 'Konica Minolta Business Solutions',
 		img:'./assets/img/KM.png',
-		subtitles:['Software Engineer', 'April 2017 - Present']}
+		subtitles:['Software Engineer', 'April 2017 - Present'],
+		description: 'I work as the primary web app developer for the \
+		Konica Minolta MarketPlace. My responsibilities include developing, \
+		improving, and supporting over 30 of our web apps. I am responsible \
+		for understanding the full stack of each of these apps and planning on \
+		how to add new features to them.'
+	}
 
 	constructor(private sectionService: SectionServiceService) { }
 
