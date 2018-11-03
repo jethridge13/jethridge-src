@@ -14,13 +14,17 @@
 			<fa-icon [icon]="faGithub"></fa-icon>
 		</a>
 	</div>
-	<div id="detailsButton">
+	<div class="detailsButton">
 		<button *ngIf=project.details (click)=toggleDetails()>{{viewMoreText}}</button>
 	</div>
 </section>
-<p [hidden]="!detailsVisible" *ngIf=project.details 
+<div [hidden]="!detailsVisible" *ngIf=project.details
 [@slideInOut]="detailsState"
 (@slideInOut.start)="animationStart($event)"
-(@slideInOut.done)="animationDone($event)"
-class="details">
-{{project.details}}</p>
+(@slideInOut.done)="animationDone($event)"	
+class="cardDetails">
+	<p *ngFor="let p of project.details"
+	class="details">
+		{{p}}
+	</p>
+</div>

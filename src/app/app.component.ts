@@ -22,8 +22,7 @@ export class AppComponent {
 		'Class of 2016'],
 		description: 'What\'s a Seawolf? I\'m a Seawolf! My time at Stony Brook \
 		was some of the best 4 years of my life. During my time there, I gained \
-		the knowledge and skills to be a robust and dedicated programmer.',
-		details: ''
+		the knowledge and skills to be a robust and dedicated programmer.'
 	};
 	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
 		img:'./assets/img/GWG.jpg',
@@ -32,8 +31,7 @@ export class AppComponent {
 		description: 'I was selected and inducted into the Udacity Grow With \
 		Google challenge based on my application in January, 2018. After my \
 		performance and community participation in phase one, I was chosen to \
-		move to stage two in April, 2018.',
-		details: ''
+		move to stage two in April, 2018.'
 	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
 		img:'./assets/img/mws-nanodegree.svg',

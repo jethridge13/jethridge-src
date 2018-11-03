@@ -1,5 +1,10 @@
 @import '../../sass/card';
 
-#detailsButton {
+.cardDetails {
+	position: relative;
+	z-index: -100;
+}
+
+.detailsButton {
 	text-align: center;
 }
