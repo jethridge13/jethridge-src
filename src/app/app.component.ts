@@ -31,7 +31,36 @@ export class AppComponent {
 		description: 'I was selected and inducted into the Udacity Grow With \
 		Google challenge based on my application in January, 2018. After my \
 		performance and community participation in phase one, I was chosen to \
-		move to stage two in April, 2018.'
+		move to stage two in April, 2018.',
+		details: ['The Grow with Google Udacity Challenge scholarship was a \
+		program ran with a collaboration between Udacity and Google. Out of over \
+		100,000 applications, I was chosen to be part of a small pool with other \
+		developers who had intermediate web development knowledge. In the first \
+		phase, all scholars were broken into 4 separate categories pertaining to \
+		their skill level and the topic for which they applied.',
+		'During phase one, we were given access to a Slack group with all of \
+		the other scholars in our skill and topic section. We were also given \
+		access to 2 example lessons from Udacity\'s Mobile Web Specialist \
+		nanodegree. In the 3 months of the program, we had to completely finish \
+		the lessons. Of those that completed the lessons, those with the most \
+		community interaction and those who helped their peers the most would \
+		be selected to move on to phase two.',
+		'I finished the lessons relatively early on and spent the rest of my \
+		time helping others with the content. Additionally, I drove to \
+		Camrbidge, Massachusetts for several tech meetups with my fellow \
+		scholars. My dedication to helping others and community outreach is \
+		what allowed me to be one of 1500 intermediate web scholars chosen \
+		to move on to phase two.',
+		'In phase two, I, along with 1500 of my fellow scholars, joined 3500 \
+		other scholars who were chosen from the other 3 groups to move on to \
+		phase two. Phase two lasted for 6 months. In that time, our goal was \
+		to complete our respective nanodegree. I finished mine almost 2 full \
+		months before the end of the program. Once I finished, I spent the rest \
+		of my time interacting and helping the community like I did during phase \
+		one.',
+		'The entire opporunity was incredible and I feel very fortunate to have \
+		been part of it. I\'d like to extend my thanks to both Udacity and \
+		Google for selecting me for both phases.']
 	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
 		img:'./assets/img/mws-nanodegree.svg',
