@@ -68,7 +68,16 @@ export class AppComponent {
 		description: 'As part of the Grow with Google Udacity Challenge, I \
 		was given the opportunity to complete Udacity\'s Mobile Web Specialist \
 		nanodegree. The nanodegree included three projects and covered several \
-		topics related to building responsive progressive web apps.'
+		topics related to building responsive progressive web apps.',
+		details: ['Udacity\'s Mobile Web Specialist Nanodegree covers \
+		various topics related to building progressive web apps. The \
+		topics covered include performance, build tools, offline \
+		behavior, accessibility, and responsive design. To obtain the \
+		nanodegree, I had to demonstrate my understanding of the topics \
+		by completing various projects. There were three projects that \
+		resulted in one final product at the end, each project building \
+		on the last. You can see my final product in the Products section \
+		below!']
 	};
 	KMCard:Project = {title: 'Konica Minolta Business Solutions',
 		img:'./assets/img/KM.png',

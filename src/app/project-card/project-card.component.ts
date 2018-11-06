@@ -13,10 +13,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 		trigger('slideInOut', [
 			transition('closed => open', [
 				style({transform: 'translateY(-100%)'}),
-				animate('0.2s ease-in'), style({transform: 'translateY(0%)'})
+				animate('0.3s ease-in'), style({transform: 'translateY(0%)'})
 			]),
 			transition('open => closed', [
-				animate('0.2s ease-in', style({transform: 'translateY(-100%)'}))
+				animate('0.3s ease-in', style({transform: 'translateY(-100%)'}))
 			])
 		])
 	]
