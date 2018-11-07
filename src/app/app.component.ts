@@ -22,7 +22,18 @@ export class AppComponent {
 		'Class of 2016'],
 		description: 'What\'s a Seawolf? I\'m a Seawolf! My time at Stony Brook \
 		was some of the best 4 years of my life. During my time there, I gained \
-		the knowledge and skills to be a robust and dedicated programmer.'
+		the knowledge and skills to be a robust and dedicated programmer.',
+		details: ['Stony Brook was my home for 4 years. I was admitted \
+		directly into the Computer Science major. In the introductory \
+		track, I leanred Java and used it to learn about data structures \
+		and design patterns. I also learned about system fundamentals \
+		using MIPS and C. Other classes I took include programming \
+		language fundamentals using Python and frontend engineering \
+		which used HTML, CSS, and JavaScript. Other electives I took \
+		include computer music and artificial intelligence.',
+		'I also studied many of the theoretical aspects of computer \
+		science such as graphy theory, combinatorics, discrete \
+		mathematics, and algorithms. ']
 	};
 	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
 		img:'./assets/img/GWG.jpg',
