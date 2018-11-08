@@ -1,5 +1,6 @@
-<picture>
+<picture id={{id}}>
 	<source *ngFor="let source of sources"
-	srcset="{{source.srcset}}" type="{{source.type}}">
+	srcset="{{source.srcset}}"
+	type="{{source.type}}">
 	<img src="{{img}}" alt="{{alt}}">
 </picture>

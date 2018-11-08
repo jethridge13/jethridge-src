@@ -18,3 +18,15 @@ h1, h2, h3 {
 	box-shadow: 0 0 10px blue;
 	transition: ease-in-out 0.2s;
 }
+
+picture img {
+	max-width: 100%;
+}
+
+@media screen and (min-width: 848px) {
+	picture img {
+		width: 848px;
+		display: block;
+		margin: auto;
+	}
+}

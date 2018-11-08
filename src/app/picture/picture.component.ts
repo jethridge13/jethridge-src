@@ -10,6 +10,7 @@ export class PictureComponent implements OnInit {
   @Input() sources: object[];
   @Input() img: string;
   @Input() alt: string;
+  @Input() id: string;
 
   constructor() { }
 
