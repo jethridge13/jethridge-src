@@ -16,6 +16,8 @@ export class AppComponent {
 	projects: Project[];
 	contactCards: ContactCard[];
 
+	// TODO Abstract this away from this component for better reusability
+
 	stonyBrookCard:Project = {title: 'Stony Brook University',
 		img:'./assets/img/SB.jpg',
 		subtitles:['Bachelors of Science in Computer Science',
@@ -97,7 +99,21 @@ export class AppComponent {
 		Konica Minolta MarketPlace. My responsibilities include developing, \
 		improving, and supporting over 30 of our web apps. I am responsible \
 		for understanding the full stack of each of these apps and planning on \
-		how to add new features to them.'
+		how to add new features to them.',
+		details: ['In my job, I am trusted to work on and understand the \
+		full stack of each of our original web apps on the Konica Minolta \
+		MarketPlace. These apps are used as various business solutions \
+		for Konica Minolta\'s series of MultiFunction Printers (MFPs). \
+		They cover several different technologies and make use of various \
+		web APIs such as the Google Drive API and Microsoft\'s OneDrive API. \
+		They also include various file transfer technologies such as SMB, \
+		FTP, and WebDAV.',
+		'I work directly on each app. It is my responsibility to ensure that \
+		each app is compatible with as many of our different types of machines \
+		as possible. Part of this has allowed me to work directly with our \
+		parent company in Japan as they develop new machines. Additionally, \
+		I have worked on documentation and code examples for third party \
+		developers on how to get their app to work on our MFPs.']
 	}
 
 	constructor(private sectionService: SectionServiceService) { }
