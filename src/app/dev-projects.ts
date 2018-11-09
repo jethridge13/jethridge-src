@@ -3,7 +3,7 @@ import { Project } from './project';
 export const PROJECTS: Project[] = [
 	{
 		title: 'MWS-Restaurant',
-		img: 'assets/img/MWS-Restaurant.png',
+		img: 'assets/img/dist/MWS-Restaurant.png',
 		alt: 'MWS-Restaurant',
 		description: 'This was my project for Udacity\'s Mobile Web Specialist \
 		Nanodegree, which I was granted access to through the Grow with Google \

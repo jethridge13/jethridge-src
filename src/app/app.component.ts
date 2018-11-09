@@ -19,7 +19,7 @@ export class AppComponent {
 	// TODO Abstract this away from this component for better reusability
 
 	stonyBrookCard:Project = {title: 'Stony Brook University',
-		img:'./assets/img/SB.jpg',
+		img:'./assets/img/dist/SB.jpg',
 		subtitles:['Bachelors of Science in Computer Science',
 		'Class of 2016'],
 		description: 'What\'s a Seawolf? I\'m a Seawolf! My time at Stony Brook \
@@ -38,7 +38,7 @@ export class AppComponent {
 		mathematics, and algorithms. ']
 	};
 	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
-		img:'./assets/img/GWG.jpg',
+		img:'./assets/img/dist/GWG.jpg',
 		subtitles:['Accepted Phase One: January 10, 2018',
 			'Accepted Phase Two: April 17, 2018'],
 		description: 'I was selected and inducted into the Udacity Grow With \
@@ -76,7 +76,7 @@ export class AppComponent {
 		Google for selecting me for both phases.']
 	};
 	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
-		img:'./assets/img/mws-nanodegree.svg',
+		img:'./assets/img/dist/mws-nanodegree.svg',
 		subtitles:['Awarded September 2, 2018'],
 		description: 'As part of the Grow with Google Udacity Challenge, I \
 		was given the opportunity to complete Udacity\'s Mobile Web Specialist \
@@ -93,7 +93,7 @@ export class AppComponent {
 		below!']
 	};
 	KMCard:Project = {title: 'Konica Minolta Business Solutions',
-		img:'./assets/img/KM.png',
+		img:'./assets/img/dist/KM.png',
 		subtitles:['Software Engineer', 'April 2017 - Present'],
 		description: 'I work as the primary web app developer for the \
 		Konica Minolta MarketPlace. My responsibilities include developing, \
