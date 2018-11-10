@@ -15,11 +15,13 @@
 	<a name="#AboutMe"></a>
 	<h1>About Me</h1>
 	<h2>Education and Awards</h2>
-	<app-project-card [project]=stonyBrookCard></app-project-card>
-	<app-project-card [project]=growWithGoogleCard></app-project-card>
-	<app-project-card [project]=MWSCard></app-project-card>
+	<div *ngFor="let project of education">
+		<app-project-card [project]=project></app-project-card>
+	</div>
 	<h2>Work Experience</h2>
-	<app-project-card [project]=KMCard></app-project-card>
+	<div *ngFor="let project of work">
+		<app-project-card [project]=project></app-project-card>
+	</div>
 </section>
 <section id="project-section">
 	<a name="#Projects"></a>
@@ -31,6 +33,9 @@
 <section id="technology-section">
 	<a name="#Tech"></a>
 	<h1>Technologies</h1>
+	<div *ngFor="let tech of technologies" class="tech-card">
+		<app-project-card [project]=tech></app-project-card>
+	</div>
 </section>
 <section id="contact-section">
 	<a name="#ContactMe"></a>

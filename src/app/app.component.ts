@@ -15,6 +15,7 @@ export class AppComponent {
 	sections: Section[];
 	projects: Project[];
 	contactCards: ContactCard[];
+	technologies: Project[];
 
 	// TODO Abstract this away from this component for better reusability
 
@@ -115,6 +116,10 @@ export class AppComponent {
 		I have worked on documentation and code examples for third party \
 		developers on how to get their app to work on our MFPs.']
 	}
+
+	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
+	this.MWSCard];
+	work: Project[] = [this.KMCard];
 
 	constructor(private sectionService: SectionServiceService) { }
 
