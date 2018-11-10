@@ -1,9 +1,14 @@
 <app-custom-header></app-custom-header>
 <app-hamburger-nav></app-hamburger-nav>
-<app-picture [sources]="[{'srcset': '../assets/img/me.webp', 'type': 'image/webp'}]"
+<div id="welcome-banner-container"><app-picture [sources]="[{'srcset': '../assets/img/dist/me.webp', 'type': 'image/webp'}]"
 			img="../assets/img/dist/me.jpg"
-			alt="Hi, I'm Josh. I make stuff."
+			alt="Hi, I'm Josh. I make cool stuff."
 			id="welcome-banner">
+</app-picture></div>
+<app-picture [sources]="[{'srcset': '../assets/img/dist/small/me.webp', 'type': 'image/webp'}]"
+	img="../assets/img/dist/small/me.jpg"
+	alt="Hi, I'm Josh. I make cool stuff."
+	id="welcome-banner-background">
 </app-picture>
 
 <section id="about-me-section">

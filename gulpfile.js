@@ -15,8 +15,8 @@ const imageMinFunction = () => {
 const createMiniImageFunction = () => {
 	gulp.src('src/assets/img/src/*')
 	.pipe(imageResize({
-		width: 5,
-		height: 5,
+		width: 20,
+		height: 20,
 		crop: false,
 		upscale: false
 	}))
