@@ -18,7 +18,7 @@ export class AppComponent {
 	technologies: Project[];
 
 	// TODO Abstract this away from this component for better reusability
-
+	// Education
 	stonyBrookCard:Project = {title: 'Stony Brook University',
 		img:'./assets/img/dist/SB.jpg',
 		subtitles:['Bachelors of Science in Computer Science',
@@ -93,6 +93,7 @@ export class AppComponent {
 		on the last. You can see my final product in the Products section \
 		below!']
 	};
+	// Work
 	KMCard:Project = {title: 'Konica Minolta Business Solutions',
 		img:'./assets/img/dist/KM.png',
 		subtitles:['Software Engineer', 'April 2017 - Present'],
@@ -116,6 +117,8 @@ export class AppComponent {
 		I have worked on documentation and code examples for third party \
 		developers on how to get their app to work on our MFPs.']
 	}
+	// Technologies
+	
 
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
 	this.MWSCard];
