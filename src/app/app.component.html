@@ -15,11 +15,11 @@
 	<a name="#AboutMe"></a>
 	<h1>About Me</h1>
 	<h2>Education and Awards</h2>
-	<div *ngFor="let project of education">
+	<div *ngFor="let project of education" class="education-card">
 		<app-project-card [project]=project></app-project-card>
 	</div>
 	<h2>Work Experience</h2>
-	<div *ngFor="let project of work">
+	<div *ngFor="let project of work" class="work-card">
 		<app-project-card [project]=project></app-project-card>
 	</div>
 </section>
