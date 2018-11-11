@@ -15,7 +15,6 @@ export class AppComponent {
 	sections: Section[];
 	projects: Project[];
 	contactCards: ContactCard[];
-	technologies: Project[];
 
 	// TODO Abstract this away from this component for better reusability
 	// Education
@@ -93,6 +92,7 @@ export class AppComponent {
 		on the last. You can see my final product in the Products section \
 		below!']
 	};
+
 	// Work
 	KMCard:Project = {title: 'Konica Minolta Business Solutions',
 		img:'./assets/img/dist/KM.png',
@@ -116,13 +116,20 @@ export class AppComponent {
 		parent company in Japan as they develop new machines. Additionally, \
 		I have worked on documentation and code examples for third party \
 		developers on how to get their app to work on our MFPs.']
-	}
+	};
+
 	// Technologies
-	
+	AngularCard:Project = {title: 'Angular',
+		img:'./assets/img/dist/angular.svg'
+	};
+	PythonCard:Project = {title: 'Python',
+		img:'./assets/img/dist/python.svg'
+	};
 
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
 	this.MWSCard];
 	work: Project[] = [this.KMCard];
+	technologies: Project[] = [this.AngularCard, this.PythonCard];
 
 	constructor(private sectionService: SectionServiceService) { }
 

@@ -36,6 +36,11 @@ section {
 	margin: auto;
 }
 
+.tech-card {
+	margin: auto;
+	width: 100px;
+}
+
 .education-card, .project-card, .work-card {
 	margin: 0 4px 0 4px;
 }
@@ -45,7 +50,7 @@ section {
 				ID styles
 ============================================
 */
-#project-section {
+#project-section, #technology-section {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
