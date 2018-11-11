@@ -120,16 +120,29 @@ export class AppComponent {
 
 	// Technologies
 	AngularCard:Project = {title: 'Angular',
-		img:'./assets/img/dist/angular.svg'
+		icon:'./assets/img/dist/angular.svg'
+	};
+	CSSCard:Project = {title: 'CSS',
+		icon:'./assets/img/dist/CSS.svg'
+	};
+	HTMLCard:Project = {title: 'HTML5',
+		icon:'./assets/img/dist/HTML5.svg'
+	};
+	PWACard:Project = {title: 'PWA',
+		icon:'./assets/img/dist/PWA.png'
 	};
 	PythonCard:Project = {title: 'Python',
-		img:'./assets/img/dist/python.svg'
+		icon:'./assets/img/dist/python.svg'
+	};
+	SassCard:Project = {title: 'Sass',
+		icon:'./assets/img/dist/sass.svg'
 	};
 
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
 	this.MWSCard];
 	work: Project[] = [this.KMCard];
-	technologies: Project[] = [this.AngularCard, this.PythonCard];
+	technologies: Project[] = [this.AngularCard, this.CSSCard, 
+	this.HTMLCard, this.PWACard, this.PythonCard, this.SassCard];
 
 	constructor(private sectionService: SectionServiceService) { }
 
