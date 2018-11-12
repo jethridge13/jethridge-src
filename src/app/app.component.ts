@@ -125,8 +125,14 @@ export class AppComponent {
 	CSSCard:Project = {title: 'CSS',
 		icon:'./assets/img/dist/CSS.svg'
 	};
+	GulpCard:Project = {title: 'Gulp',
+		icon:'./assets/img/dist/gulp.svg'
+	};
 	HTMLCard:Project = {title: 'HTML5',
 		icon:'./assets/img/dist/HTML5.svg'
+	};
+	JSCard:Project = {title: 'JavaScript',
+		icon:'./assets/img/dist/JS.svg'
 	};
 	PWACard:Project = {title: 'PWA',
 		icon:'./assets/img/dist/PWA.png'
@@ -141,8 +147,9 @@ export class AppComponent {
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
 	this.MWSCard];
 	work: Project[] = [this.KMCard];
-	technologies: Project[] = [this.AngularCard, this.CSSCard, 
-	this.HTMLCard, this.PWACard, this.PythonCard, this.SassCard];
+	technologies: Project[] = [this.AngularCard, this.CSSCard,
+	this.GulpCard, this.HTMLCard, this.JSCard, this.PWACard,
+	this.PythonCard, this.SassCard];
 
 	constructor(private sectionService: SectionServiceService) { }
 
