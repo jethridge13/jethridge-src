@@ -1,4 +1,4 @@
-<section>
+<article>
 	<h3>{{project.title}}</h3>
 	<img *ngIf=project.icon src={{project.icon}} alt="{{project.title}} Logo"
 	class="icon">
@@ -19,7 +19,7 @@
 	<div class="detailsButton">
 		<button *ngIf=project.details (click)=toggleDetails()>{{viewMoreText}}</button>
 	</div>
-</section>
+</article>
 <div [hidden]="!detailsVisible" *ngIf=project.details
 [@slideInOut]="detailsState"
 (@slideInOut.start)="animationStart($event)"

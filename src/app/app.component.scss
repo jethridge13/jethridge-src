@@ -20,7 +20,7 @@ h2 {
 
 section {
 	max-width: 848px;
-	margin: auto;
+	margin: 0 auto 4px auto;
 }
 
 /* 
@@ -32,9 +32,6 @@ section {
 	flex-grow: 1;
 }
 
-.project-card {
-	margin: auto;
-}
 
 .tech-card {
 	margin: 0 auto 4px auto;
@@ -46,6 +43,9 @@ section {
 	margin: 0 4px 0 4px;
 }
 
+.project-card {
+	margin: auto;
+}
 /* 
 ============================================
 				ID styles
