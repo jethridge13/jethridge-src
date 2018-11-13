@@ -134,6 +134,9 @@ export class AppComponent {
 	JSCard:Project = {title: 'JavaScript',
 		icon:'./assets/img/dist/JS.svg'
 	};
+	NodeCard:Project = {title: 'NodeJS',
+		icon:'./assets/img/dist/node.svg'
+	}
 	PWACard:Project = {title: 'PWA',
 		icon:'./assets/img/dist/PWA.png'
 	};
@@ -151,7 +154,7 @@ export class AppComponent {
 	this.MWSCard];
 	work: Project[] = [this.KMCard];
 	technologies: Project[] = [this.AngularCard, this.CSSCard,
-	this.GulpCard, this.HTMLCard, this.JSCard, this.PWACard,
+	this.GulpCard, this.HTMLCard, this.JSCard, this.NodeCard, this.PWACard,
 	this.PythonCard, this.SassCard, this.TSCard];
 
 	constructor(private sectionService: SectionServiceService) { }
