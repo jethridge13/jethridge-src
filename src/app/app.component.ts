@@ -143,13 +143,16 @@ export class AppComponent {
 	SassCard:Project = {title: 'Sass',
 		icon:'./assets/img/dist/sass.svg'
 	};
+	TSCard:Project = {title: 'TypeScript',
+		icon:'./assets/img/dist/ts.svg'
+	};
 
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
 	this.MWSCard];
 	work: Project[] = [this.KMCard];
 	technologies: Project[] = [this.AngularCard, this.CSSCard,
 	this.GulpCard, this.HTMLCard, this.JSCard, this.PWACard,
-	this.PythonCard, this.SassCard];
+	this.PythonCard, this.SassCard, this.TSCard];
 
 	constructor(private sectionService: SectionServiceService) { }
 
