@@ -1,6 +1,5 @@
 @import './variables';
 
-/* You can add global styles to this file, and also import other style files */
 body {
 	background-color: $secondary-background-color;
 	margin: 0;
@@ -21,6 +20,10 @@ h1, h2, h3 {
 
 picture img {
 	max-width: 100%;
+	background-image: url('../assets/img/dist/loading.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #welcome-banner {
