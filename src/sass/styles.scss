@@ -18,6 +18,10 @@ h1, h2, h3 {
 	transition: ease-in-out 0.2s;
 }
 
+a, a:visited {
+	color: $secondary-font-color;
+}
+
 picture img {
 	max-width: 100%;
 	background-image: url('../assets/img/dist/loading.svg');
