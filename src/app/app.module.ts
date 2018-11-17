@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HamburgerNavComponent } from './hamburger-nav/hamburger-nav.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
 	declarations: [
@@ -29,7 +31,8 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
 		BrowserAnimationsModule,
 		CommonModule,
 		FontAwesomeModule,
-		RouterModule.forRoot([])
+		RouterModule.forRoot([]),
+		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 	],
 	providers: [],
 	bootstrap: [AppComponent]
