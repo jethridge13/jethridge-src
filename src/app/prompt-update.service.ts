@@ -6,10 +6,20 @@ import { SwUpdate } from '@angular/service-worker';
 })
 export class PromptUpdateService {
 
+	// TODO Update this to prompt the user for SW updates
+	promptUser(): boolean {
+		return true;
+	}
+
 	constructor(updates: SwUpdate) {
 		updates.available.subscribe(event => {
-			if (promptUser()) {
-				updates.activateUpdate().then(() => document.location.reload());
+			// TODO Update this
+			if (this.promptUser()) {
+				updates.activateUpdate().then(() => {
+					if (document && document.location) {
+						document.location.reload();
+					}
+				});
 			}
 		});
 	}
