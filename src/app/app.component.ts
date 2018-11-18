@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Section } from './section';
 import { Project } from './project';
 import { ContactCard } from './contact-card';
+
 import { SectionServiceService } from './section-service.service';
+import { CheckForUpdateService } from './check-for-update.service';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 	title = 'jethridge';
 	sections: Section[];
 	projects: Project[];
@@ -18,9 +20,9 @@ export class AppComponent {
 
 	// TODO Abstract this away from this component for better reusability
 	// Education
-	stonyBrookCard:Project = {title: 'Stony Brook University',
-		img:'./assets/img/dist/SB.jpg',
-		subtitles:['Bachelors of Science in Computer Science',
+	stonyBrookCard: Project = {title: 'Stony Brook University',
+		img: './assets/img/dist/SB.jpg',
+		subtitles: ['Bachelors of Science in Computer Science',
 		'Class of 2016'],
 		description: 'What\'s a Seawolf? I\'m a Seawolf! My time at Stony Brook \
 		was some of the best 4 years of my life. During my time there, I gained \
@@ -37,9 +39,9 @@ export class AppComponent {
 		science such as graphy theory, combinatorics, discrete \
 		mathematics, and algorithms. ']
 	};
-	growWithGoogleCard:Project = {title: 'Grow with Google Udacity Challenge',
-		img:'./assets/img/dist/GWG.jpg',
-		subtitles:['Accepted Phase One: January 10, 2018',
+	growWithGoogleCard: Project = {title: 'Grow with Google Udacity Challenge',
+		img: './assets/img/dist/GWG.jpg',
+		subtitles: ['Accepted Phase One: January 10, 2018',
 			'Accepted Phase Two: April 17, 2018'],
 		description: 'I was selected and inducted into the Udacity Grow With \
 		Google challenge based on my application in January, 2018. After my \
@@ -75,9 +77,9 @@ export class AppComponent {
 		been part of it. I\'d like to extend my thanks to both Udacity and \
 		Google for selecting me for both phases.']
 	};
-	MWSCard:Project = {title: 'Mobile Web Specialist Nanodegree',
-		img:'./assets/img/dist/mws-nanodegree.svg',
-		subtitles:['Awarded September 2, 2018'],
+	MWSCard: Project = {title: 'Mobile Web Specialist Nanodegree',
+		img: './assets/img/dist/mws-nanodegree.svg',
+		subtitles: ['Awarded September 2, 2018'],
 		description: 'As part of the Grow with Google Udacity Challenge, I \
 		was given the opportunity to complete Udacity\'s Mobile Web Specialist \
 		nanodegree. The nanodegree included three projects and covered several \
@@ -94,9 +96,9 @@ export class AppComponent {
 	};
 
 	// Work
-	KMCard:Project = {title: 'Konica Minolta Business Solutions',
-		img:'./assets/img/dist/KM.png',
-		subtitles:['Software Engineer', 'April 2017 - Present'],
+	KMCard: Project = {title: 'Konica Minolta Business Solutions',
+		img: './assets/img/dist/KM.png',
+		subtitles: ['Software Engineer', 'April 2017 - Present'],
 		description: 'I work as the primary web app developer for the \
 		Konica Minolta MarketPlace. My responsibilities include developing, \
 		improving, and supporting over 30 of our web apps. I am responsible \
@@ -119,35 +121,35 @@ export class AppComponent {
 	};
 
 	// Technologies
-	AngularCard:Project = {title: 'Angular',
-		icon:'./assets/img/dist/angular.svg'
+	AngularCard: Project = {title: 'Angular',
+		icon: './assets/img/dist/angular.svg'
 	};
-	CSSCard:Project = {title: 'CSS',
-		icon:'./assets/img/dist/CSS.svg'
+	CSSCard: Project = {title: 'CSS',
+		icon: './assets/img/dist/CSS.svg'
 	};
-	GulpCard:Project = {title: 'Gulp',
-		icon:'./assets/img/dist/gulp.svg'
+	GulpCard: Project = {title: 'Gulp',
+		icon: './assets/img/dist/gulp.svg'
 	};
-	HTMLCard:Project = {title: 'HTML5',
-		icon:'./assets/img/dist/HTML5.svg'
+	HTMLCard: Project = {title: 'HTML5',
+		icon: './assets/img/dist/HTML5.svg'
 	};
-	JSCard:Project = {title: 'JavaScript',
-		icon:'./assets/img/dist/JS.svg'
+	JSCard: Project = {title: 'JavaScript',
+		icon: './assets/img/dist/JS.svg'
 	};
-	NodeCard:Project = {title: 'NodeJS',
-		icon:'./assets/img/dist/node.svg'
-	}
-	PWACard:Project = {title: 'PWA',
-		icon:'./assets/img/dist/PWA.png'
+	NodeCard: Project = {title: 'NodeJS',
+		icon: './assets/img/dist/node.svg'
 	};
-	PythonCard:Project = {title: 'Python',
-		icon:'./assets/img/dist/python.svg'
+	PWACard: Project = {title: 'PWA',
+		icon: './assets/img/dist/PWA.png'
 	};
-	SassCard:Project = {title: 'Sass',
-		icon:'./assets/img/dist/sass.svg'
+	PythonCard: Project = {title: 'Python',
+		icon: './assets/img/dist/python.svg'
 	};
-	TSCard:Project = {title: 'TypeScript',
-		icon:'./assets/img/dist/ts.svg'
+	SassCard: Project = {title: 'Sass',
+		icon: './assets/img/dist/sass.svg'
+	};
+	TSCard: Project = {title: 'TypeScript',
+		icon: './assets/img/dist/ts.svg'
 	};
 
 	education: Project[] = [this.stonyBrookCard, this.growWithGoogleCard,
@@ -157,7 +159,8 @@ export class AppComponent {
 	this.GulpCard, this.HTMLCard, this.JSCard, this.NodeCard, this.PWACard,
 	this.PythonCard, this.SassCard, this.TSCard];
 
-	constructor(private sectionService: SectionServiceService) { }
+	constructor(private sectionService: SectionServiceService,
+		private checkForUpdatesService: CheckForUpdateService) { }
 
 	ngOnInit() {
 		this.getProjects();
@@ -179,6 +182,6 @@ export class AppComponent {
 	getContactCards(): void {
 		this.sectionService.getContactCards().subscribe(contactCards => {
 			this.contactCards = contactCards;
-		})
+		});
 	}
 }
