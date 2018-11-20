@@ -5,7 +5,6 @@ import { Project } from './project';
 import { ContactCard } from './contact-card';
 
 import { SectionServiceService } from './section-service.service';
-import { CheckForUpdateService } from './check-for-update.service';
 
 @Component({
 	selector: 'app-root',
@@ -159,8 +158,7 @@ export class AppComponent implements OnInit {
 	this.GulpCard, this.HTMLCard, this.JSCard, this.NodeCard, this.PWACard,
 	this.PythonCard, this.SassCard, this.TSCard];
 
-	constructor(private sectionService: SectionServiceService,
-		private checkForUpdatesService: CheckForUpdateService) { }
+	constructor(private sectionService: SectionServiceService) { }
 
 	ngOnInit() {
 		this.getProjects();
