@@ -30,9 +30,7 @@ img {
 
 
 article {
-	background-color: $secondary-background-color;
-	border: 2px solid $primary-font-color;
-	border-radius: 8px;
+	background-color: $card-background-color;
 	margin: 0 auto 8px auto;
 	padding: 8px;
 	height: calc(100% - 20px);
