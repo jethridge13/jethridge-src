@@ -5,6 +5,7 @@ import { Project } from './project';
 import { ContactCard } from './contact-card';
 
 import { SectionServiceService } from './section-service.service';
+import { PromptUpdateService } from './prompt-update.service';
 
 @Component({
 	selector: 'app-root',
@@ -158,7 +159,8 @@ export class AppComponent implements OnInit {
 	this.GulpCard, this.HTMLCard, this.JSCard, this.NodeCard, this.PWACard,
 	this.PythonCard, this.SassCard, this.TSCard];
 
-	constructor(private sectionService: SectionServiceService) { }
+	constructor(private sectionService: SectionServiceService,
+		private promptService: PromptUpdateService) { }
 
 	ngOnInit() {
 		this.getProjects();

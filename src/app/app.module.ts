@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatSnackBarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
@@ -31,6 +32,7 @@ import { environment } from '../environments/environment';
 		BrowserAnimationsModule,
 		CommonModule,
 		FontAwesomeModule,
+		MatSnackBarModule,
 		RouterModule.forRoot([]),
 		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 	],

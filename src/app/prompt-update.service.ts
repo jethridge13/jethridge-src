@@ -1,26 +1,20 @@
 import { Injectable } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
+import { MatSnackBar } from '@angular/material';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class PromptUpdateService {
 
-	// TODO Update this to prompt the user for SW updates
-	promptUser(): boolean {
-		return true;
-	}
-
-	constructor(updates: SwUpdate) {
+	constructor(updates: SwUpdate, snackbar: MatSnackBar) {
 		updates.available.subscribe(event => {
-			// TODO Update this
-			if (this.promptUser()) {
-				updates.activateUpdate().then(() => {
-					if (document && document.location) {
-						document.location.reload();
-					}
-				});
-			}
+			const snack = snackbar.open('Update Available', 'Reload');
+
+			snack
+			.onAction().subscribe(() => {
+				window.location.reload();
+			});
 		});
 	}
 }
