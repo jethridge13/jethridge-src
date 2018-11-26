@@ -53,9 +53,6 @@ export class HamburgerNavComponent implements OnInit {
 		});
 	}
 
-	// TODO Update this to hide the visibility of the dropdown
-	// Functionality it works but creates accessibility issues and
-	// tab order issues
 	animationStart(event: any) {
 		if (event.toState === 'open') {
 			this.visible = true;
