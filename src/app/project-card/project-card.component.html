@@ -12,7 +12,8 @@
 		rel="noopener">Visit</a>
 		<a *ngIf=project.github href={{project.github}}
 		target="_blank"
-		rel="noopener">
+		rel="noopener"
+		attr.aria-label="GitHub link for {{project.title}}">
 			<fa-icon [icon]="faGithub"></fa-icon>
 		</a>
 	</div>
